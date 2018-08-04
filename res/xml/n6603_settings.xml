@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref_key_1d"
+        android:title="Linear (1D) Symbologies" >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_codabar_enable"
+            android:title="Codabar" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_code11_enable"
+            android:title="Code 11" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_code39_enable"
+            android:title="Code 39" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_code93_enable"
+            android:title="Code 93" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_code128_enable"
+            android:title="Code 128" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_ean8_enable"
+            android:title="EAN-8/JAN-8" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_ean13_enable"
+            android:title="EAN-13/JAN-13" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_gs1_128_enable"
+            android:title="GS1-128" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_int25_enable"
+            android:title="Interleaved 2 of 5" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_msi_enable"
+            android:title="MSI" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_upca_enable"
+            android:title="UPC-A" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_upce0_enable"
+            android:title="UPC-E" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_upce1_upce1_enable"
+            android:title="UPC-E1" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_2d"
+        android:title=" (2D) Symbologies" >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_micropdf_enable"
+            android:title="Micro PDF417" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_pdf417_enable"
+            android:title="PDF417" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_aztec_enable"
+            android:title="Aztec Code" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_datamatrix_enable"
+            android:title="Data Matrix" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_hanxin_enable"
+            android:title="Han Xin" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_maxicode_enable"
+            android:title="Maxicode" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="sym_qr_enable"
+            android:title="QR Code" />
+    </PreferenceCategory>
+    <!-- OCR Mode -->
+    <PreferenceCategory android:title="OCR Mode" >
+        <!-- SYM_OCR -->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="sym_ocr_enable"
+            android:summaryOff="@string/sym_check_to_enable"
+            android:summaryOn="@string/sym_uncheck_to_disable"
+            android:title="OCR" />
+    </PreferenceCategory>
+
+    <PreferenceScreen
+        android:key="key_special_setting"
+        android:widgetLayout="@layout/preference_widget_image"
+        android:title="Special Setting" />
+    
+    
+</PreferenceScreen>

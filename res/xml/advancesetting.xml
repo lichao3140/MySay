@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/iscan_setting" >
+        <PreferenceScreen
+            android:key="key_prefix"
+            android:title="@string/iscan_prefix"
+            android:widgetLayout="@layout/preference_widget_image" />
+        <PreferenceScreen
+            android:key="key_suffix"
+            android:title="@string/iscan_suffix"
+            android:widgetLayout="@layout/preference_widget_image" />
+        <PreferenceScreen
+            android:key="key_trimleft"
+            android:title="@string/iscan_trimleft"
+            android:widgetLayout="@layout/preference_widget_image" />
+        <PreferenceScreen
+            android:key="key_trimright"
+            android:title="@string/iscan_trimright"
+            android:widgetLayout="@layout/preference_widget_image" />
+    </PreferenceCategory>
+
+    <PreferenceScreen
+        android:key="key_outtime"
+        android:title="@string/iscan_outtime"
+        android:widgetLayout="@layout/preference_widget_image" />
+    <PreferenceScreen
+        android:key="key_decodetime"
+        android:title="@string/iscan_decodeouttime"
+        android:widgetLayout="@layout/preference_widget_image" />
+    <PreferenceScreen
+        android:key="key_interval_time"
+        android:title="@string/iscan_interval_time"
+        android:widgetLayout="@layout/preference_widget_image" />
+    <PreferenceScreen
+        android:key="key_filter_character"
+        android:title="@string/iscan_filter_character"
+        android:widgetLayout="@layout/preference_widget_image" />
+    <PreferenceScreen
+        android:key="key_enable_code"
+        android:title="@string/iscan_enable_code"
+        android:widgetLayout="@layout/preference_widget_image" />
+    <!--
+      <PreferenceScreen
+        android:key="key_scan_config"
+        android:widgetLayout="@layout/preference_widget_image"
+        android:title="@string/iscan_scankey_config" />
+    -->
+    <PreferenceScreen
+        android:key="key_scan_test"
+        android:title="@string/iscan_test"
+        android:widgetLayout="@layout/preference_widget_image" />
+    <PreferenceScreen
+        android:key="key_advance_password"
+        android:title="@string/iscan_advance_password"
+        android:widgetLayout="@layout/preference_widget_image" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="key_continus_scan"
+        android:selectable="true"
+        android:summaryOff="@string/iscan_continus_scan_off"
+        android:summaryOn="@string/iscan_continus_scan_on"
+        android:title="@string/iscan_continus_scan"
+        android:widgetLayout="@layout/my_checkbox" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="key_notice"
+        android:selectable="true"
+        android:summaryOff="@string/iscan_notice_off"
+        android:summaryOn="@string/iscan_notice_on"
+        android:title="@string/iscan_notice"
+        android:widgetLayout="@layout/my_checkbox" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="key_icon"
+        android:selectable="true"
+        android:summaryOff="@string/iscan_icon_off"
+        android:summaryOn="@string/iscan_icon_on"
+        android:title="@string/iscan_icon"
+        android:widgetLayout="@layout/my_checkbox" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="key_scan_stop"
+        android:selectable="true"
+        android:summaryOff="@string/iscan_stopscan_off"
+        android:summaryOn="@string/iscan_stopscan_on"
+        android:title="@string/iscan_key_stop"
+        android:widgetLayout="@layout/my_checkbox" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="key_log"
+        android:selectable="true"
+        android:title="@string/iscan_log"
+        android:widgetLayout="@layout/my_checkbox" />
+
+    <ListPreference
+        android:defaultValue="0"
+        android:dialogTitle="@string/iscan_send_title"
+        android:entries="@array/method_sendcontext_entries"
+        android:entryValues="@array/method_sendcontext_values"
+        android:key="key_broadcast"
+        android:summary="@string/default_send_summeray"
+        android:title="@string/iscan_send_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="key_sacn_bad"
+        android:selectable="true"
+        android:summaryOff="@string/iscan_faile_beep_off"
+        android:summaryOn="@string/iscan_faile_beep_on"
+        android:title="@string/iscan_scanfaile"
+        android:widgetLayout="@layout/my_checkbox" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="key_deletect"
+        android:selectable="true"
+        android:summaryOff="@string/iscan_deletect_off"
+        android:summaryOn="@string/iscan_deletect_on"
+        android:title="@string/iscan_deletect"
+        android:widgetLayout="@layout/my_checkbox" />
+
+    <ListPreference
+        android:defaultValue="@string/default_decode_method"
+        android:dialogTitle="@string/iscan_decode_method"
+        android:entries="@array/method_entries"
+        android:entryValues="@array/method_values"
+        android:key="key_charset"
+        android:summary="@string/default_decode_summeray"
+        android:title="@string/iscan_decode_method" />
+
+    <PreferenceScreen
+        android:key="key_reset"
+        android:title="@string/iscan_enable_reset" />
+
+</PreferenceScreen>

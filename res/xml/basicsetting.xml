@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="key_barcode"
+        android:summaryOff="@string/iscan_barcode_off"
+        android:summaryOn="@string/iscan_barcode_On"
+        android:title="@string/iscan_barcode" />
+
+
+<!-- 
+    <com.android.auto.iscan.utility.GestureSwitchPreference
+        android:key="key_barcode"
+        android:defaultValue="true"
+        android:title="@string/iscan_barcode" />
+    
+  -->
+
+    <PreferenceCategory android:title="@string/iscan_decodefeedback" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_beep"
+             android:focusable="false"
+            android:selectable="true"
+            android:summaryOff="@string/iscan_beep_off"
+            android:summaryOn="@string/iscan_beep_on"
+            android:title="@string/iscan_beep"
+            android:widgetLayout="@layout/my_checkbox" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_vibrate"
+            android:selectable="true"
+            android:summaryOff="@string/iscan_vibrate_off"
+            android:summaryOn="@string/iscan_vibrate_on"
+            android:title="@string/iscan_vibrate"
+            android:widgetLayout="@layout/my_checkbox" />
+      
+
+          <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_light"
+            android:selectable="true"
+            android:summaryOff="@string/iscan_light_off"
+            android:summaryOn="@string/iscan_light_on"
+            android:title="@string/iscan_light_title"
+            android:widgetLayout="@layout/my_checkbox" />
+          
+        <ListPreference
+            android:defaultValue="@string/default_addcontext"
+            android:dialogTitle="@string/iscan_addcontext"
+            android:entries="@array/method_addcontext_entries"
+            android:entryValues="@array/method_addcontext_values"
+            android:key="key_terminator"
+            android:summary="@string/default_addcontext_summeray"
+            android:title="@string/iscan_addcontext"
+            android:widgetLayout="@layout/preference_widget_imagedown" />
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:textSize="20dp"
+        android:title="@string/iscan_addfunction" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_auto"
+            android:selectable="true"
+            android:summaryOff="@string/iscan_autorun_off"
+            android:summaryOn="@string/iscan_autorun_on"
+            android:title="@string/iscan_autorun"
+            android:widgetLayout="@layout/my_checkbox" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_power"
+            android:selectable="true"
+            android:summaryOff="@string/iscan_power_off"
+            android:summaryOn="@string/iscan_power_on"
+            android:title="@string/iscan_power"
+            android:widgetLayout="@layout/my_checkbox" />
+      
+        
+    </PreferenceCategory>
+
+    <PreferenceScreen
+        android:key="key_setting"
+        android:title="@string/iscan_setting"
+        android:widgetLayout="@layout/preference_widget_image" />
+    <PreferenceScreen
+        android:key="key_about"
+        android:persistent="false"
+        android:title="@string/iscan_about"
+        android:widgetLayout="@layout/preference_widget_image" />
+    <PreferenceScreen
+        android:key="key_exit"
+        android:persistent="false"
+        android:title="@string/iscan_exit" />
+    
+</PreferenceScreen>

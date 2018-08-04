@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="50dp"
+    android:gravity="center_vertical"
+     android:background="@drawable/list_selector_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+       
+        android:id="@+id/groupItem"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="20.0sp"
+        android:textColor="#000000"
+         />
+</LinearLayout>

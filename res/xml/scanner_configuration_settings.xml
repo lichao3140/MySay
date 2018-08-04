@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen
+        android:summary="@string/symbology_advanced_configuration_summary"
+        android:title="@string/symbology_advanced_configuration" >
+
+        <!-- SYM_CODABAR -->
+        <PreferenceScreen
+            android:summary="@string/symbology_select_to_configure_advanced_properties"
+            android:title="@string/sym_codabar_title" >
+
+            <!-- Check enable -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_codabar_check_transmit_enable"
+                android:title="@string/sym_check_enable_title" />
+            <!-- Start/Stop Transmit -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_codabar_start_stop_transmit_enable"
+                android:title="@string/sym_start_stop_transmit_enable_title" />
+        </PreferenceScreen>
+
+        <!-- SYM_CODE11 -->
+        <PreferenceScreen
+            android:summary="@string/symbology_select_to_configure_advanced_properties"
+            android:title="@string/sym_code11_title" >
+
+            <!-- Enable/Disable -->
+            <!--
+                For now remove enable/disable from advanced - does not work well with enable/disable prefs
+		        <CheckBoxPreference
+		            android:title="@string/sym_enable"
+		            android:summaryOn="@string/sym_uncheck_to_disable"
+		            android:summaryOff="@string/sym_check_to_enable"
+		            android:key="symQrEnableFlag"
+		            android:defaultValue="false" />
+            -->
+            <!-- Check enable -->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="sym_code11_check_enable"
+                android:title="@string/sym_check_enable_title" />
+        </PreferenceScreen>
+
+        <!-- SYM_CODE39 -->
+        <PreferenceScreen
+            android:summary="@string/symbology_select_to_configure_advanced_properties"
+            android:title="@string/sym_code39_title" >
+
+            <!-- Check enable -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_code39_check_enable"
+                android:title="@string/sym_check_enable_title" />
+           
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_code39_start_stop_transmit_enable"
+                android:title="@string/sym_start_stop_transmit_enable_title" />
+            
+            
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_code39_fullascii_enable"
+                android:title="@string/sym_fullascii_enable_title" />
+        </PreferenceScreen>
+
+        <!-- SYM_EAN8 -->
+        <PreferenceScreen
+            android:summary="@string/symbology_select_to_configure_advanced_properties"
+            android:title="@string/sym_ean8_title" >
+            <!-- Check transmit -->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="sym_ean8_check_transmit_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_check_transmit_enable_title" />
+            
+            <!-- 2 digit addenda -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_ean8_2_5_digit_addenda_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_2_digit_addenda_enable_title" />
+
+            <!-- Translate to ena13 -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_translate_ean8_to_ean13_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_translate_ean8_to_ean13_enable_title" />
+        </PreferenceScreen>
+
+        <!-- SYM_EAN13 -->
+        <PreferenceScreen
+            android:summary="@string/symbology_select_to_configure_advanced_properties"
+            android:title="@string/sym_ean13_title" >
+
+            <!-- Check transmit -->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="sym_ean13_check_transmit_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_check_transmit_enable_title" />
+            <!-- Addenda separator -->
+
+
+            <!-- 5 digit addenda -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_ean13_2_5_digit_addenda_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_5_digit_addenda_enable_title" />
+        </PreferenceScreen>
+
+        <!-- SYM_UPCA -->
+        <PreferenceScreen
+            android:summary="@string/symbology_select_to_configure_advanced_properties"
+            android:title="@string/sym_upca_title" >
+
+            <!-- Check transmit -->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="sym_upca_check_transmit_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_check_transmit_enable_title" />
+            <!-- Num transmit -->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="sym_upca_sys_num_transmit_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_num_transmit_enable_title" />
+
+            <!-- 5 digit addenda -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_upca_2_5_digit_addenda_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_5_digit_addenda_enable_title" />
+
+            <!-- Translate to ena13 -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_translate_upca_to_ean13_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_translate_upca_to_ean13_enable_title" />
+        </PreferenceScreen>
+
+        <!-- SYM_UPCE0 -->
+        <PreferenceScreen
+            android:summary="@string/symbology_select_to_configure_advanced_properties"
+            android:title="@string/sym_upce0_title" >
+
+            <!-- UPCE0 expanded -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_upce0_upce0_expanded_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_upce0_expanded_enable_title" />
+            <!-- Check transmit -->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="sym_upce0_check_transmit_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_check_transmit_enable_title" />
+            <!-- Num transmit -->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="sym_upce0_sys_num_transmit_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_num_transmit_enable_title" />
+
+            <!-- 5 digit addenda -->
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="sym_upce0_2_5_digit_addenda_enable"
+                android:summaryOff="@string/sym_check_to_enable"
+                android:summaryOn="@string/sym_uncheck_to_disable"
+                android:title="@string/sym_5_digit_addenda_enable_title" />
+        </PreferenceScreen>
+        
+        
+        <!-- SYM_INT25 -->
+            <PreferenceScreen 
+	            android:title="@string/sym_int25_title"
+	            android:summary="@string/symbology_select_to_configure_advanced_properties">
+	            <!-- Check enable -->
+		        <CheckBoxPreference
+		            android:title="@string/sym_check_enable_title"
+		            android:key="sym_int25_check_enable"
+		            android:defaultValue="false" />
+		        
+		   
+		    </PreferenceScreen>
+		    
+    </PreferenceScreen>
+
+    <PreferenceCategory
+        android:key="scanning_setting"
+        android:title="@string/scanning_preferences" >
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/decode_centering_mode_entries"
+            android:entryValues="@array/decode_centering_mode_values"
+            android:key="decode_centering_mode"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/decode_centering_mode_list_summary"
+            android:title="@string/decode_centering_mode_list_title" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/securite_config_values_titles"
+            android:entryValues="@array/securite_config_values"
+            android:key="securiteConfig"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/title_securite_config_summary"
+            android:title="@string/title_securite_config" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/lights_config_values_titles"
+            android:entryValues="@array/lights_config_values"
+            android:key="lightsConfig"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/title_lights_config_summary"
+            android:title="@string/title_lights_config" />
+        <ListPreference
+            android:defaultValue="5"
+            android:entries="@array/lightsintensity_config_values_titles"
+            android:entryValues="@array/lightsintensity_config_values"
+            android:key="lightsintensityConfig"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/title_lightsintensity_config_summary"
+            android:title="@string/title_lightsintensity_config" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,5 @@
+<update>
+	<appkey>6253ecb1471b4b22</appkey>
+	<server-url>http://mdm.idatachina.com/mdm/services/api/app/get/v1</server-url>
+	<!--<server-url>http://192.168.1.22/mdm/services/api/app/get/v1</server-url>-->
+</update>

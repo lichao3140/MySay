@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage"
+    android:paddingBottom="20.0dip"
+    android:paddingTop="20.0dip" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:src="@drawable/iscan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/TitleTextSize" />
+
+    <TextView
+        android:id="@+id/vision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/about_logo_text2"
+        android:textSize="@dimen/TitleTextSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/TitleTextSize" />
+    
+    
+     <TextView
+            style="@style/MMBriefText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_build_date"
+            android:textSize="11.0dip" />
+     
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/TitleTextSize" />
+     
+      <LinearLayout
+          
+          
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="7.0"
+        android:orientation="vertical" >
+
+  <LinearLayout
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="8.0"
+        android:orientation="vertical" >
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:visibility="gone"
+        android:textColor="#000000" />
+  </LinearLayout>
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="bottom|center"
+        android:orientation="vertical" >
+        <TextView
+            style="@style/MMBriefText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_copyright"
+            android:textSize="11.0dip" />
+    </LinearLayout>
+    
+  </LinearLayout>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/TitleTextSize" />
+    
+</LinearLayout>

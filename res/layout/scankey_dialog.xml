@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+  
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+            android:text="@string/iscan_middle_scankey_config"
+            android:textSize="9pt" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <RadioButton
+                android:id="@+id/check_barcode_m"
+                android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+                android:text="@string/iscan_barcode_scankey" />
+
+            <RadioButton
+                android:id="@+id/check_rfid_m"
+                android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/iscan_rfid_scankey" />
+
+            <RadioButton
+                android:id="@+id/check_user_m"
+                android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+                android:text="@string/iscan_user_scankey" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scankey_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/view_divider" />
+
+        <TextView
+            android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+            android:text="@string/iscan_left_scankey_config"
+            android:textSize="9pt" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_l"
+            android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <RadioButton
+                android:id="@+id/check_barcode_l"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:text="@string/iscan_barcode_scankey" />
+
+            <RadioButton
+                android:id="@+id/check_rfid_l"
+                android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:visibility="gone"
+                android:text="@string/iscan_rfid_scankey" />
+
+            <RadioButton
+                android:id="@+id/check_user_l"
+                android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+                android:text="@string/iscan_user_scankey" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+      
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/view_divider" />
+
+        <TextView
+            android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+            android:text="@string/iscan_right_scankey_config"
+            android:textSize="9pt" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_r"
+            android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <RadioButton
+                android:id="@+id/check_barcode_r"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:text="@string/iscan_barcode_scankey" />
+
+            <RadioButton
+                android:id="@+id/check_rfid_r"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+              android:layout_height="wrap_content"
+                android:text="@string/iscan_rfid_scankey" />
+
+            <RadioButton
+                android:id="@+id/check_user_r"
+                android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+                android:text="@string/iscan_user_scankey" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/view_divider" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="exitbutton0"
+            android:text="OK" />
+    </LinearLayout>
+
+</LinearLayout>
