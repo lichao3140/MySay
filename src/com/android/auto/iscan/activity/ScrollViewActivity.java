@@ -115,7 +115,7 @@ public class ScrollViewActivity extends Activity {
 	}
 	
 	private void enterSetting(String code) {
-		
+		isTime();
 		if (code.equals(ScanSettingUtil.SETTING_ENTER)) { // Ω¯»Î…Ë÷√
 			
 			Toast.makeText(ScrollViewActivity.this, code, Toast.LENGTH_LONG).show();
